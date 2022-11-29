@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav {
+  background: black;
+  padding: 20px 0px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav a {
+  color: white;
+  padding: 20px 30px;
+}
+main{
+  margin-top: 58px;
+}
+
+.paginaActiva{
+  border-bottom: 1px solid white;
+}
+.banner {
+  background: rgb(95, 188, 255);
+  color: white;
+  padding: 45px 0px;
+  text-align: center;
+}
+
+.contenedor {
+  margin: 30px;
+}
+footer {
+  background: black;
+  text-align: center;
+  color: white;
+  padding: 20px 0px;
+}
+#centrarImagen {
+  text-align: center;
+}
+
+p {
+  padding: 10px 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 12px 0px;
+}
+
+/* position */
+.contenedorPrincipal {
+  border: 2px solid red;
+  position: relative;
+}
+
+.caja {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+#cajaAzul {
+  background: rgb(46, 144, 255);
+  position: relative;
+  top: 150px;
+  left: 50px;
+  z-index: -1;
+
+}
+
+#cajaAmarilla {
+  background: rgb(228, 232, 97);
+  position: absolute;
+  top: 0px;
+}
+
+#cajaRoja {
+  background: rgb(237, 67, 98);
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+}
+
+#parrafoSticky{
+  background:rgb(228, 232, 97);
+  position: sticky;
+  top: 70px;
+  z-index: -1;
+}
+
+/* Elementos */
+
+.margenGeneral {
+  margin: 30px;
+}
+
