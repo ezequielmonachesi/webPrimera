@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -17,11 +20,11 @@ nav a {
   color: white;
   padding: 20px 30px;
 }
-main{
+main {
   margin-top: 58px;
 }
 
-.paginaActiva{
+.paginaActiva {
   border-bottom: 1px solid white;
 }
 .banner {
@@ -75,7 +78,6 @@ h6 {
   top: 150px;
   left: 50px;
   z-index: -1;
-
 }
 
 #cajaAmarilla {
@@ -91,8 +93,8 @@ h6 {
   right: 30px;
 }
 
-#parrafoSticky{
-  background:rgb(228, 232, 97);
+#parrafoSticky {
+  background: rgb(228, 232, 97);
   position: sticky;
   top: 70px;
   z-index: -1;
@@ -104,3 +106,96 @@ h6 {
   margin: 30px;
 }
 
+/* Practica de Flexbox */
+
+.contenedorFlexible {
+  display: flex;
+  border: 1px solid rgb(237, 67, 98);
+}
+
+.contenedorFlexible aside {
+  border: 1px solid blue;
+  color: white;
+  background: rgb(17, 92, 108);
+  background: linear-gradient(
+    148deg,
+    rgba(17, 92, 108, 1) 0%,
+    rgba(15, 115, 119, 1) 36%,
+    rgba(194, 19, 171, 1) 100%
+  );
+}
+
+hr {
+  margin-bottom: 10px;
+}
+
+.contenedorFlexible-wrap {
+  display: flex;
+  border: 1px solid rgb(237, 67, 98);
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contenedorFlexible-wrap aside {
+  color: white;
+  background: rgb(17, 92, 108);
+  background: linear-gradient(
+    148deg,
+    rgba(17, 92, 108, 1) 0%,
+    rgba(15, 115, 119, 1) 36%,
+    rgba(194, 19, 171, 1) 100%
+  );
+  width: 45%;
+}
+
+.contenedorFlexible-vertical {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid yellowgreen;
+  height: 600px;
+  justify-content: center;
+  align-content: center;
+}
+.contenedorFlexible-vertical aside {
+  color: white;
+  background: rgb(17, 92, 108);
+  background: linear-gradient(
+    148deg,
+    rgba(17, 92, 108, 1) 0%,
+    rgba(15, 115, 119, 1) 36%,
+    rgba(194, 19, 171, 1) 100%
+  );
+  width: 30%;
+}
+
+/* Media queries */
+/* 
+@media tipo de medio (screen, print, speech, all) and (condicion){
+  aquí agregaría todo el estilo que quiero corregir
+}
+*/
+
+/* Dispositivos small */
+
+@media all and (max-width: 767px) {
+  #centrarImagen img {
+    width: 100%;
+  }
+
+  .contenedorFlexible{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* dispositivos medium */
+@media all and (min-width: 768px) and (max-width: 991px) {
+  #centrarImagen img {
+    width: 100%;
+  }
+  .contenedorFlexible aside{
+    width: 30%;
+    flex-wrap: wrap;
+  }
+}
